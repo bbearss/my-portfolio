@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -13,11 +13,16 @@
     .header {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
+    }
+    .name-block {
+      display: flex;
+      flex-direction: column;
     }
     .name {
       font-size: 48px;
       font-weight: bold;
+      line-height: 1.2;
     }
     .subtext {
       font-size: 18px;
@@ -26,8 +31,8 @@
       margin-top: 8px;
     }
     .profile-pic {
-      width: 240px;
-      height: 240px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
       object-fit: cover;
       border: 2px solid white;
@@ -42,9 +47,11 @@
 <body>
 
   <div class="header">
-    <div class="name">Brock Bearss</div>
-    <div class="subtext">Open to new opportunities</div><br><br>
-    <img class="profile-pic" src="https://github.com/bbearss/my-portfolio/blob/main/profile.jpg?raw=true" alt="Profile Picture">
+    <div class="name-block">
+      <div class="name">Brock Bearss</div>
+      <div class="subtext">Open to new opportunities</div>
+    </div>
+    <img class="profile-pic" src="profile.jpg" alt="Profile Picture">
   </div>
 
   <p class="intro">
